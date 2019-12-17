@@ -1,0 +1,18 @@
+Package: QRLL
+Type: Package
+Title: Quantile regression on Inactivity time
+Version: 0.1.0
+Author: Yichen Jia, Jong-Hyeon Jeong
+Maintainer: Yichen Jia <yij22@pitt.edu>
+Description: QRLL fits a regression model for quantile inactivity time (lost lifespan) for right cesored data (with competing risks).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: 
+  quantreg,
+  Rcpp,
+  RcppArmadillo
+LinkingTo:
+  Rcpp,
+  RcppArmadillo
