@@ -37,5 +37,5 @@ data("testdata")
 
 # Test run of QRLL
 cov <- testdata[,c("x1","x2","x3")]
-testRun <- QRLL(testdata$time, testdata$event, cov, t0 = 15, tau = 0.5, type = 1, nPerturb=1000)
+testRun <- QRLL(testdata$time, testdata$event, cov, t0 = 15, tau = 0.5, type = 1, nPerturb = 1000)
 ```
