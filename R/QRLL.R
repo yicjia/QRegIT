@@ -40,7 +40,7 @@ fit.fun=function(time, event, cov, SC, wt=1, type, t0, tau){
 #' data("testdata")
 #' # Test run of QRLL:
 #' cov = testdata[,c("x1","x2","x3")]
-#' testRun = QRLL(testdata$time, testdata$event, cov, t0 = 15, tau = 0.5, type = 1, nPerturn=1000)
+#' testRun = QRLL(testdata$time, testdata$event, cov, t0 = 15, tau = 0.5, type = 1, nPerturb=1000)
 #' # End
 #' @import stats
 #' @export
