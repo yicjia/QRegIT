@@ -13,19 +13,19 @@ QRLL(time, event, cov, t0, tau, type = 1, nPerturb = 400)
 
 \item{cov}{the covariate(s) used in the regression}
 
-\item{t0}{a pre-specified time point used to define inactivity time or lost lifespan. t0 can be chosen from the observation period whose maximum would be the administrative censoring.}
+\item{t0}{a pre-specified time point used to define inactivity time. t0 can be chosen from the observation period whose maximum would be the administrative censoring.}
 
-\item{tau}{the quantile desired, this is a number strictly between 0 and 1,}
+\item{tau}{the quantile desired, this is a number strictly between 0 and 1.}
 
-\item{type}{the event of primary interst when competing risks present. If no competing risks, then leave it blank.}
+\item{type}{the event of primary interest when competing risks present. If no competing risks, then leave it blank.}
 
 \item{nPerturb}{the number of perturbations. Default = 400}
 }
 \value{
-QRLL returns a data frame contianing estimated coefficients and 95% CI
+QRLL returns a data frame contianing estimated coefficients and 95 percent confidence interval.
 }
 \description{
-QRLL function
+QRLL fits a regression model for quantile inactivity time (lost lifespan) for right censored data (with competing risks).
 }
 \examples{
 # Load the example data testdata

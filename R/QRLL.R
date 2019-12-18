@@ -23,16 +23,16 @@ fit.fun=function(time, event, cov, SC, wt=1, type, t0, tau){
 }
 
 #' QRLL function
-#' @name QRLL
-#' @aliases QRLL
+#'
+#' QRLL fits a regression model for quantile inactivity time (lost lifespan) for right censored data (with competing risks).
 #' @param time the follow up time
 #' @param event the status indicator, normally 0 = censored
 #' @param cov the covariate(s) used in the regression
-#' @param t0 a pre-specified time point used to define inactivity time or lost lifespan. t0 can be chosen from the observation period whose maximum would be the administrative censoring.
-#' @param tau the quantile desired, this is a number strictly between 0 and 1,
-#' @param type the event of primary interst when competing risks present. If no competing risks, then leave it blank.
+#' @param t0 a pre-specified time point used to define inactivity time. t0 can be chosen from the observation period whose maximum would be the administrative censoring.
+#' @param tau the quantile desired, this is a number strictly between 0 and 1.
+#' @param type the event of primary interest when competing risks present. If no competing risks, then leave it blank.
 #' @param nPerturb the number of perturbations. Default = 400
-#' @return QRLL returns a data frame contianing estimated coefficients and 95% CI
+#' @return QRLL returns a data frame contianing estimated coefficients and 95 percent confidence interval.
 #' @author Yichen Jia <yij22@pitt.edu>, Jong-Hyeon Jeong <jjeong@pitt.edu>.
 #' @references Yichen Jia, Jong-Hyeon Jeong. Cause-Specific Quantile Regression on Inactivity Time. Submitted 2019.
 #' @examples
