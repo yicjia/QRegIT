@@ -2,6 +2,6 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 SC_func <- function(Time, censor, wgt) {
-    .Call(`_QRLL_SC_func`, Time, censor, wgt)
+    .Call(`_QRegIT_SC_func`, Time, censor, wgt)
 }
 

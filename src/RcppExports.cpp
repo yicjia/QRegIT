@@ -8,7 +8,7 @@ using namespace Rcpp;
 
 // SC_func
 arma::mat SC_func(arma::vec& Time, arma::vec& censor, arma::vec& wgt);
-RcppExport SEXP _QRLL_SC_func(SEXP TimeSEXP, SEXP censorSEXP, SEXP wgtSEXP) {
+RcppExport SEXP _QRegIT_SC_func(SEXP TimeSEXP, SEXP censorSEXP, SEXP wgtSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -21,11 +21,11 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_QRLL_SC_func", (DL_FUNC) &_QRLL_SC_func, 3},
+    {"_QRegIT_SC_func", (DL_FUNC) &_QRegIT_SC_func, 3},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_QRLL(DllInfo *dll) {
+RcppExport void R_init_QRegIT(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }

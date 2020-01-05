@@ -1,10 +1,10 @@
-Package: QRLL
+Package: QRegIT
 Type: Package
 Title: Quantile regression on Inactivity time
 Version: 0.1.0
 Author: Yichen Jia, Jong-Hyeon Jeong
 Maintainer: Yichen Jia <yij22@pitt.edu>
-Description: QRLL fits a regression model for quantile inactivity time (lost lifespan) for right cesored data (with competing risks).
+Description: QRegIT is an R package for quantile (Q) regression (Reg) on inactivity (I) time (T). The inactivity time can be interpreted as time lost due to an event of interest, reversed lifetime, or time beyond an adverse event such as transition to an addictive drug. We propose a quantile regression model to associate the inactivity time with potential predictors, adjusting for confounding factors. This function can also handle competing risks data.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
