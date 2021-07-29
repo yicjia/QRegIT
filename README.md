@@ -1,8 +1,8 @@
 # QRegIT
  *QRegIT* is an R package for quantile (Q) regression (Reg) on inactivity (I) time (T). The inactivity time can be interpreted as time lost due to an event of interest, reversed lifetime, or time beyond an adverse event such as transition to an addictive drug. We propose a quantile regression model to associate the inactivity time with potential predictors, adjusting for confounding factors. This function can also handle competing risks data.
  
- ## Publication
- * **Jia, Y.** & Jeong, J. H. (2021). Cause-specific quantile regression on inactivity time. [*Statistics in Medicine*](https://onlinelibrary.wiley.com/doi/10.1002/sim.8871).
+ Please refer to our paper for more details: https://onlinelibrary.wiley.com/doi/10.1002/sim.8871
+ 
  
   
  ## Installation
@@ -42,4 +42,19 @@ data("testdata")
 # Test run of QRegIT
 cov <- testdata[,c("x1","x2","x3")]
 testRun <- QRegIT(testdata$time, testdata$event, cov, t0 = 15, tau = 0.5, type = 1, nPerturb = 1000)
+```
+ 
+ ## Reference
+ ### If you use QRegIT in your research, please consider citing: 
+```
+@article{jia2021cause,
+  title={Cause-specific quantile regression on inactivity time},
+  author={Jia, Yichen and Jeong, Jong-Hyeon},
+  journal={Statistics in Medicine},
+  volume={40},
+  number={7},
+  pages={1811--1824},
+  year={2021},
+  publisher={Wiley Online Library}
+}
 ```
