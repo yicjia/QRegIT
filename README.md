@@ -46,6 +46,7 @@ testRun <- QRegIT(testdata$time, testdata$event, cov, t0 = 15, tau = 0.5, type =
  
  ## Reference
  ### If you use QRegIT in your research, please consider citing: 
+ Jia, Y., & Jeong, J. H. (2021). Cause‐specific quantile regression on inactivity time. Statistics in Medicine, 40(7), 1811-1824.
 ```
 @article{jia2021cause,
   title={Cause-specific quantile regression on inactivity time},
